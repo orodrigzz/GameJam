@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class SpawnOscar : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Circle;
+    private int num= 0;
 
-    // Update is called once per frame
+    public float x;
+    public float y;
+    Vector2 randomPos;
+
     void Update()
     {
-        
+        x = Random.Range(-10, 10);
+        y = Random.Range(-5, 5);
+        randomPos = new Vector2(x, y);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+           num++;
+        }
+
+        if (num == 5)
+        {
+            Instantiate(Circle, randomPos, Quaternion.identity);
+            num = 0;
+        }
     }
 }
