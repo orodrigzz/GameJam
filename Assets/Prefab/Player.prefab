@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1321156565343508099}
   m_Layer: 0
   m_Name: HitArea_Up
-  m_TagString: Reflect
+  m_TagString: ReflectUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -124,8 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f276872f278bb48af4ef2872b54011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refPos: 1
-  impulse: 6
 --- !u!1 &3787005194933179142
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +138,7 @@ GameObject:
   - component: {fileID: 6678290494054052032}
   m_Layer: 0
   m_Name: HitArea_Bottom
-  m_TagString: Reflect
+  m_TagString: ReflectDown
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -250,8 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f276872f278bb48af4ef2872b54011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refPos: 0
-  impulse: 6
 --- !u!1 &3787005195251409064
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +262,7 @@ GameObject:
   - component: {fileID: 1772287403924643082}
   m_Layer: 0
   m_Name: HitArea_Right
-  m_TagString: Reflect
+  m_TagString: ReflectRight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -376,8 +372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f276872f278bb48af4ef2872b54011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refPos: 2
-  impulse: 6
 --- !u!1 &3787005195498019166
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +531,7 @@ GameObject:
   - component: {fileID: 3657936312257579871}
   m_Layer: 0
   m_Name: HitArea_Left
-  m_TagString: Reflect
+  m_TagString: ReflectLeft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -647,5 +641,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f276872f278bb48af4ef2872b54011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refPos: 3
-  impulse: 6

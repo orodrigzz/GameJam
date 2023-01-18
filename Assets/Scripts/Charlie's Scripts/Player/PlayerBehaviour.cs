@@ -33,10 +33,9 @@ public class PlayerBehaviour : MonoBehaviour
         float directionY = Input.GetAxisRaw("Vertical");
 
         playerDirection = new Vector2(directionX, directionY).normalized;
-        Debug.Log(playerDirection.y);
-        Debug.Log(playerDirection.x);
+       
 
-        if(Input.GetMouseButton(0) && playerDirection.y == 1)
+        if(Input.GetKey(KeyCode.Keypad8))
         {
             upThing.SetActive(true);
         }
@@ -44,7 +43,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             upThing.SetActive(false);
         }
-        if (Input.GetMouseButton(0) && playerDirection.y == -1)
+        if (Input.GetKey(KeyCode.Keypad5))
         {
             bottomThing.SetActive(true);
         }
@@ -52,7 +51,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             bottomThing.SetActive(false);
         }
-        if (Input.GetMouseButton(0) && playerDirection.x == 1)
+        if (Input.GetKey(KeyCode.Keypad6))
         {
             rightThing.SetActive(true);
         }
@@ -60,7 +59,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             rightThing.SetActive(false);
         }
-        if (Input.GetMouseButton(0) && playerDirection.x == -1)
+        if (Input.GetKey(KeyCode.Keypad4))
         {
             leftThing.SetActive(true);
         }

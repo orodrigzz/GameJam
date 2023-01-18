@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Reflect
   - Ball
+  - ReflectUp
+  - ReflectDown
+  - ReflectRight
+  - ReflectLeft
   layers:
   - Default
   - TransparentFX

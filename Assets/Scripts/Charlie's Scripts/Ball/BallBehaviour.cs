@@ -8,7 +8,7 @@ public class BallBehaviour : MonoBehaviour
     public float ballSpeed;
     private Rigidbody2D rb;
     #endregion
-
+   
 
 
     void Start()
@@ -30,4 +30,26 @@ public class BallBehaviour : MonoBehaviour
 
         return new Vector2(x, y);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+            if (collision.gameObject.tag == "ReflectRight")
+            {
+                Debug.Log("111");
+                rb.velocity = RandomVector(5f, -5f);
+            }
+            if (collision.gameObject.tag == "ReflectLeft")
+            {
+                rb.velocity = RandomVector(5f, -5f);
+            }
+            if (collision.gameObject.tag == "ReflectUp")
+            {
+                rb.velocity = RandomVector(5f, -5f);
+            }
+            if (collision.gameObject.tag == "ReflectDown")
+            {
+                rb.velocity = RandomVector(5f, -5f);
+            }
+        }
+    
 }
