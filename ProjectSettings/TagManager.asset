@@ -10,6 +10,11 @@ TagManager:
   - ReflectDown
   - ReflectRight
   - ReflectLeft
+  - Wall
+  - R
+  - L
+  - U
+  - D
   layers:
   - Default
   - TransparentFX

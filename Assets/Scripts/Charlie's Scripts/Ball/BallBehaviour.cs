@@ -5,22 +5,38 @@ using UnityEngine;
 public class BallBehaviour : MonoBehaviour
 {
     #region BallParameters
-    public float ballSpeed;
+    Vector2 direction;
+    public float startSpeed;
     private Rigidbody2D rb;
+    private float currentRadiants;
     #endregion
-   
+    #region Reflect
+    
+    #endregion
+
+
+
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = RandomVector(5f, -5f);
+        float radiants = 0;      
+        while (radiants == 0)
+        {
+            radiants = Random.Range(0, 2 * Mathf.PI);
+            currentRadiants = radiants;
+        }
+        direction = new Vector2(Mathf.Cos(radiants), Mathf.Sin(radiants));
+        direction.Normalize();
+        direction *= startSpeed;
+        rb.AddForce(direction);
     }
 
     
     void Update()
     {
-        
+       
     }
 
     private Vector2 RandomVector(float min, float max)
@@ -32,24 +48,33 @@ public class BallBehaviour : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-            if (collision.gameObject.tag == "ReflectRight")
-            {
-                Debug.Log("111");
-                rb.velocity = RandomVector(5f, -5f);
-            }
-            if (collision.gameObject.tag == "ReflectLeft")
-            {
-                rb.velocity = RandomVector(5f, -5f);
-            }
-            if (collision.gameObject.tag == "ReflectUp")
-            {
-                rb.velocity = RandomVector(5f, -5f);
-            }
-            if (collision.gameObject.tag == "ReflectDown")
-            {
-                rb.velocity = RandomVector(5f, -5f);
-            }
-        }
-    
+      if(collision.collider.tag == "Player")
+      {
+            Debug.Log("asdasdas");
+      }
+      if (collision.collider.tag == "L")
+      {
+            rb.AddForce(direction*2);
+      }
+      if (collision.collider.tag == "R")
+      {
+            rb.AddForce(direction * 2);
+      }
+      if (collision.collider.tag == "U")
+      {
+            rb.AddForce(direction * 2);
+      }
+      if (collision.collider.tag == "D")
+      {
+            rb.AddForce(direction * 2);
+      }
+      if (collision.collider.tag == "Wall")
+      {
+            Debug.Log("wall");
+      }
+
+    }
+
+
+   
 }
