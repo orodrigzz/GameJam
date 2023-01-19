@@ -30,6 +30,14 @@ public class GameManager : MonoBehaviour
     int highscore = 0;
     #endregion
 
+    #region PowerUps
+    public bool isGodModeActive;
+    public bool isSmallArenaActive;
+    public float godModeTime;
+    public float smallArenaTime;
+    public Transform Walls;
+    #endregion
+
     private void Awake()
     {
         if (_GAME_MANAGER != null && _GAME_MANAGER != this)
@@ -56,10 +64,29 @@ public class GameManager : MonoBehaviour
         x = Random.Range(minX, maxX);
         y = Random.Range(minY, maxY);
         randomPos = new Vector2(x, y);
-
+        scoreText.text = score.ToString();
         if (num == 5)
         {
             SpawnBall();
+        }
+        if (isGodModeActive)
+        {
+            godModeTime -= Time.deltaTime;
+            if (godModeTime <= 0f)
+            {
+                isGodModeActive = false;
+                godModeTime = 1f;
+            }
+        }
+        if (isSmallArenaActive)
+        {
+            
+            smallArenaTime -= Time.deltaTime;
+            if (smallArenaTime <= 0f)
+            {
+                isSmallArenaActive = false;
+                smallArenaTime = 1f;
+            }
         }
     }
 
@@ -72,10 +99,25 @@ public class GameManager : MonoBehaviour
     public void AddPoint()
     {
         score++;
-        scoreText.text = score.ToString();
+        
         if (highscore < score)
         {
             PlayerPrefs.SetInt("highscore", score);
         }
+    }
+
+    public void ExtraPoints()
+    {
+        score += 100;
+    }
+    public void GodMode()
+    {
+        isGodModeActive = true;
+        
+    }
+    public void SmallArena()
+    {
+        isSmallArenaActive = true;
+       
     }
 }

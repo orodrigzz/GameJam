@@ -50,7 +50,11 @@ public class BallBehaviour : MonoBehaviour
     {
       if(collision.collider.tag == "Player")
       {
-            Destroy(Player);
+            if (GameManager._GAME_MANAGER.isGodModeActive != true)
+            {
+                Destroy(Player);
+            }
+            
       }
 
       if (collision.collider.tag == "L")

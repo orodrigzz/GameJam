@@ -73,4 +73,20 @@ public class PlayerBehaviour : MonoBehaviour
     {
         rb.velocity = new Vector2(playerDirection.x * playerSpeed * Time.deltaTime, playerDirection.y * playerSpeed * Time.deltaTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "ExtraPoints")
+        {
+            GameManager._GAME_MANAGER.ExtraPoints();
+        }
+        if (collision.collider.tag == "GodMode")
+        {
+            GameManager._GAME_MANAGER.GodMode();
+        }
+        if (collision.collider.tag == "SmallArena")
+        {
+            GameManager._GAME_MANAGER.SmallArena();
+        }
+    }
 }
