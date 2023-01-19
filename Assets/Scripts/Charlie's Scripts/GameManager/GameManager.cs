@@ -35,7 +35,11 @@ public class GameManager : MonoBehaviour
     public bool isSmallArenaActive;
     public float godModeTime;
     public float smallArenaTime;
-    public Transform Walls;
+    public float spawnObstacleTime;
+    public Transform walls;
+    bool hasSpawned;
+    public float resetObstacles;
+    public GameObject obstacle;
     #endregion
 
     private void Awake()
@@ -57,6 +61,7 @@ public class GameManager : MonoBehaviour
         highscore = PlayerPrefs.GetInt("highscore", 0);
         scoreText.text = score.ToString();
         highscoreText.text = highscore.ToString();
+        InvokeRepeating("SpawnObstacle", 3, 3);
     }
 
     void Update()
@@ -81,22 +86,30 @@ public class GameManager : MonoBehaviour
         if (isSmallArenaActive)
         {
             Vector3 reducedScale = new Vector3(0.8f, 0.8f, 0.8f);
-            Walls.localScale = reducedScale;
+            walls.localScale = reducedScale;
             smallArenaTime -= Time.deltaTime;
             if (smallArenaTime <= 0f)
             {
                 Vector3 originalScale = new Vector3(1f, 1f, 1f);
-                Walls.localScale = originalScale;
+                walls.localScale = originalScale;
                 isSmallArenaActive = false;
                 smallArenaTime = 1f;
             }
         }
+        
+       
     }
 
     public void SpawnBall()
     {
         Instantiate(ball, randomPos, Quaternion.identity);
-        num = 0;
+        spawnObstacleTime = 3;
+    }
+    public void SpawnObstacle()
+    {
+        Instantiate(obstacle, randomPos, Quaternion.identity);
+        hasSpawned = true;
+
     }
 
     public void AddPoint()
