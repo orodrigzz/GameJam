@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     #region GAMEMANAGER
     public static GameManager _GAME_MANAGER;
     #endregion
+
     #region Spawner
     public GameObject ball;
     public int num= 0;
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     float y;
     Vector2 randomPos;
     #endregion
+
     #region Score&HighScore
     public Text scoreText;
     public Text highscoreText;
@@ -41,17 +43,24 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(this);
         }
     }
-    void Start()
+
+    private void Start()
     {
-        
+        highscore = PlayerPrefs.GetInt("highscore", 0);
+        scoreText.text = score.ToString();
+        highscoreText.text = highscore.ToString();
     }
 
-    // Update is called once per frame
     void Update()
     {
         x = Random.Range(minX, maxX);
         y = Random.Range(minY, maxY);
         randomPos = new Vector2(x, y);
+
+        if (num == 5)
+        {
+            SpawnBall();
+        }
     }
 
     public void SpawnBall()
@@ -59,6 +68,7 @@ public class GameManager : MonoBehaviour
         Instantiate(ball, randomPos, Quaternion.identity);
         num = 0;
     }
+
     public void AddPoint()
     {
         score++;
