@@ -80,10 +80,13 @@ public class GameManager : MonoBehaviour
         }
         if (isSmallArenaActive)
         {
-            
+            Vector3 reducedScale = new Vector3(0.8f, 0.8f, 0.8f);
+            Walls.localScale = reducedScale;
             smallArenaTime -= Time.deltaTime;
             if (smallArenaTime <= 0f)
             {
+                Vector3 originalScale = new Vector3(1f, 1f, 1f);
+                Walls.localScale = originalScale;
                 isSmallArenaActive = false;
                 smallArenaTime = 1f;
             }
