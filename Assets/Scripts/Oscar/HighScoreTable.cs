@@ -1,16 +1,4 @@
-﻿/* 
-    ------------------- Code Monkey -------------------
-
-    Thank you for downloading this package
-    I hope you find it useful in your projects
-    If you have any questions let me know
-    Cheers!
-
-               unitycodemonkey.com
-    --------------------------------------------------
- */
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,13 +22,7 @@ public class HighscoreTable : MonoBehaviour {
 
         if (highscores == null) {
             // There's no stored table, initialize
-            Debug.Log("Initializing table with default values...");
-            AddHighscoreEntry(1000000, "CMK");
-            AddHighscoreEntry(897621, "JOE");
-            AddHighscoreEntry(872931, "DAV");
-            AddHighscoreEntry(785123, "CAT");
-            AddHighscoreEntry(542024, "MAX");
-            AddHighscoreEntry(68245, "AAA");
+            AddHighscoreEntry(0, "Richard");
             // Reload
             jsonString = PlayerPrefs.GetString("highscoreTable");
             highscores = JsonUtility.FromJson<Highscores>(jsonString);
@@ -88,11 +70,11 @@ public class HighscoreTable : MonoBehaviour {
         string rankString;
         switch (rank) {
         default:
-            rankString = rank + "TH"; break;
+            rankString = rank + "º"; break;
 
-        case 1: rankString = "1ST"; break;
-        case 2: rankString = "2ND"; break;
-        case 3: rankString = "3RD"; break;
+        case 1: rankString = "1º"; break;
+        case 2: rankString = "2º"; break;
+        case 3: rankString = "3º"; break;
         }
 
         entryTransform.Find("posText").GetComponent<Text>().text = rankString;
