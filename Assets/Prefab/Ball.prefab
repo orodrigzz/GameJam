@@ -136,4 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd47ea0331bebf948badd673aa57fc2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeed: 0
+  startSpeed: 110
+  isAwake: 0
+  player: {fileID: 0}
+  Player: {fileID: 0}

@@ -10,9 +10,12 @@ public class BallBehaviour : MonoBehaviour
     private Rigidbody2D rb;
     private float currentRadiants;
     #endregion
-    #region Reflect
-    
+    #region SoftIA
+    public bool isAwake;
+    public Transform player;
+    public GameObject Player;
     #endregion
+
 
 
 
@@ -36,7 +39,8 @@ public class BallBehaviour : MonoBehaviour
     
     void Update()
     {
-       
+        
+        
     }
 
     private Vector2 RandomVector(float min, float max)
@@ -50,28 +54,43 @@ public class BallBehaviour : MonoBehaviour
     {
       if(collision.collider.tag == "Player")
       {
-            Debug.Log("asdasdas");
+            Destroy(Player);
       }
       if (collision.collider.tag == "L")
       {
             rb.AddForce(direction*2);
+            GameManager._GAME_MANAGER.AddPoint();
+            GameManager._GAME_MANAGER.num++;
+           
       }
       if (collision.collider.tag == "R")
       {
             rb.AddForce(direction * 2);
-      }
+            GameManager._GAME_MANAGER.AddPoint();
+            GameManager._GAME_MANAGER.num++;
+
+        }
       if (collision.collider.tag == "U")
       {
             rb.AddForce(direction * 2);
-      }
+            GameManager._GAME_MANAGER.AddPoint();
+            GameManager._GAME_MANAGER.num++;
+
+        }
       if (collision.collider.tag == "D")
       {
             rb.AddForce(direction * 2);
-      }
+            GameManager._GAME_MANAGER.AddPoint();
+            GameManager._GAME_MANAGER.num++;
+
+
+        }
       if (collision.collider.tag == "Wall")
       {
             Debug.Log("wall");
-      }
+           
+
+        }
 
     }
 
