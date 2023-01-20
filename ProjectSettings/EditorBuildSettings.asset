@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 2c7a9ae9bae799144ac48bb95597fc4f
   - enabled: 1
-    path: Assets/Scenes/InputBallScene.unity
+    path: Assets/Scenes/Game.unity
     guid: 645382a993ebbbf45be9377ef4162ae7
   - enabled: 1
     path: Assets/Scenes/Options.unity

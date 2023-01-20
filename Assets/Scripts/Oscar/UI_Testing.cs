@@ -26,6 +26,7 @@ public class UI_Testing : MonoBehaviour {
 
                     InputName.SetActive(false);
                     submit.SetActive(false);
+                    Time.timeScale = 1f;
                 });
         };
     }

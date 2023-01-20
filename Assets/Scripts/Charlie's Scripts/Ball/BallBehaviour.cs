@@ -27,11 +27,8 @@ public class BallBehaviour : MonoBehaviour
     public AudioSource contraplayer;
     void Start()
     {
-        if (HighScoreTable != null)
-        {
-            HighScoreTable.SetActive(false);
-        }
-       
+        HighScoreTable.SetActive(false);
+        Time.timeScale = 0f;
     }
 
     private void Awake()
@@ -49,28 +46,18 @@ public class BallBehaviour : MonoBehaviour
         rb.AddForce(direction);
     }
 
-
-    void Update()
-    {
-
-       
-    }
-
-   
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
       if(collision.collider.tag == "Player")
       {
             if (GameManager._GAME_MANAGER.isGodModeActive != true)
             {
+                Time.timeScale = 0f;
                 dead.Play();
                 Destroy(Player);
                 highscoreTable.AddHighscoreEntry(GameManager._GAME_MANAGER.score, PlayerPrefs.GetString("name"));
                 HighScoreTable.SetActive(true);
-
             }
-            
       }
 
       if (collision.collider.tag == "L")
