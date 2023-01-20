@@ -17,9 +17,13 @@ public class BallBehaviour : MonoBehaviour
     public GameObject Player;
     #endregion
 
+    //HighscoreTable
+    public GameObject HighScoreTable;
+    public HighscoreTable highscoreTable;
+
     void Start()
     {
-       
+        HighScoreTable.SetActive(false);
     }
 
     private void Awake()
@@ -53,6 +57,9 @@ public class BallBehaviour : MonoBehaviour
             if (GameManager._GAME_MANAGER.isGodModeActive != true)
             {
                 Destroy(Player);
+                highscoreTable.AddHighscoreEntry(GameManager._GAME_MANAGER.score, PlayerPrefs.GetString("name"));
+                HighScoreTable.SetActive(true);
+
             }
             
       }

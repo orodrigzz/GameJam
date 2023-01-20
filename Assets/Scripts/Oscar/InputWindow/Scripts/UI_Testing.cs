@@ -20,6 +20,10 @@ public class UI_Testing : MonoBehaviour {
 
     [SerializeField] private HighscoreTable highscoreTable;
 
+    //InputName
+    public GameObject InputName;
+    public GameObject submit;
+
     private void Start() {
         transform.Find("submitScoreBtn").GetComponent<Button_UI>().ClickFunc = () => {
             UI_Blocker.Show_Static();
@@ -31,8 +35,9 @@ public class UI_Testing : MonoBehaviour {
                    
                     PlayerPrefs.SetString("name", nameText);
                     PlayerPrefs.Save();
-                    //Quitar UI
 
+                    InputName.SetActive(false);
+                    submit.SetActive(false);
                     //Cuando morir 
                     //highscoreTable.AddHighscoreEntry(GameManager._GAME_MANAGER.score,  PlayerPrefs.GetString("name"););
 
