@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,159 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 100Points_PickUp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689817c968b579a44908a69af6f856e6
+      internalID: -2071463837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100Points_PickUp_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 140
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7603f79d61b22424dbea73d6aaa32b0b
+      internalID: -1482470706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100Points_PickUp_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 140
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df7dba4f6b4f124ca95fbb455b79896
+      internalID: 276901192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100Points_PickUp_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 11
+        width: 104
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a68bdcbe5f8994688d160dbb8e5afc
+      internalID: 1611459974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100Points_PickUp_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 30
+        width: 104
+        height: 68
+      alignment: 9
+      pivot: {x: 0.56698066, y: 0.51280516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2f066f885c1ad48b41539b05de2890
+      internalID: -2049429521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100Points_PickUp_5
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 43
+        width: 104
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5697717, y: 0.35725442}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b29525b6b6e9b4c973c849ec853623
+      internalID: -1554920006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +239,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      100Points_PickUp_5: -1554920006
+      100Points_PickUp_8: 1274527779
+      100Points_PickUp_26: 399014135
+      100Points_PickUp_19: 1331210832
+      100Points_PickUp_17: -386932666
+      100Points_PickUp_13: 1611459974
+      100Points_PickUp_18: -764118003
+      100Points_PickUp_9: 67688664
+      100Points_PickUp_2: 276901192
+      100Points_PickUp_11: 369751148
+      100Points_PickUp_7: -500354284
+      100Points_PickUp_16: 859450102
+      100Points_PickUp_22: 274912361
+      100Points_PickUp_27: -1156984897
+      100Points_PickUp_25: 1829709476
+      100Points_PickUp_23: 1254252889
+      100Points_PickUp_4: -2049429521
+      100Points_PickUp_10: -1541631603
+      100Points_PickUp_3: 96719283
+      100Points_PickUp_14: 781760645
+      100Points_PickUp_1: -1482470706
+      100Points_PickUp_0: -2071463837
+      100Points_PickUp_21: -336930395
+      100Points_PickUp_20: 1604409641
+      100Points_PickUp_24: 1277007709
+      100Points_PickUp_12: -1608067073
+      100Points_PickUp_6: 1616551513
+      100Points_PickUp_15: 897469438
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

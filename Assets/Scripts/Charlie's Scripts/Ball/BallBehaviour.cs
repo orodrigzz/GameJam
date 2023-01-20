@@ -9,6 +9,7 @@ public class BallBehaviour : MonoBehaviour
     public float startSpeed;
     private Rigidbody2D rb;
     private float currentRadiants;
+    public Animator animator;
     #endregion
 
     #region SoftIA
@@ -23,7 +24,11 @@ public class BallBehaviour : MonoBehaviour
 
     void Start()
     {
-        HighScoreTable.SetActive(false);
+        if (HighScoreTable != null)
+        {
+            HighScoreTable.SetActive(false);
+        }
+       
     }
 
     private void Awake()
@@ -67,34 +72,45 @@ public class BallBehaviour : MonoBehaviour
       if (collision.collider.tag == "L")
       {
             //rb.AddForce(direction);
+            
             GameManager._GAME_MANAGER.AddPoint();
             GameManager._GAME_MANAGER.num++;
-            
+            animator.SetTrigger("Hit");
+            animator.ResetTrigger("isMoving");
 
         }
 
       if (collision.collider.tag == "R")
       {
             //rb.AddForce(direction);
+            
             GameManager._GAME_MANAGER.AddPoint();
             GameManager._GAME_MANAGER.num++;
-            
+            animator.SetTrigger("Hit");
+            animator.ResetTrigger("isMoving");
+
         }
 
       if (collision.collider.tag == "U")
       {
             //rb.AddForce(direction);
+           
             GameManager._GAME_MANAGER.AddPoint();
             GameManager._GAME_MANAGER.num++;
-           
+            animator.SetTrigger("Hit");
+            animator.ResetTrigger("isMoving");
+
         }
 
-      if (collision.collider.tag == "D")
-      {
+        if (collision.collider.tag == "D")
+        {
             //rb.AddForce(direction);
+            
             GameManager._GAME_MANAGER.AddPoint();
             GameManager._GAME_MANAGER.num++;
-            
+            animator.SetTrigger("Hit");
+            animator.ResetTrigger("isMoving");
+
         }
 
       if (collision.collider.tag == "Wall")
@@ -103,6 +119,43 @@ public class BallBehaviour : MonoBehaviour
             
       }
 
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "L")
+        {
+            //rb.AddForce(direction);
+
+           
+            animator.ResetTrigger("Hit");
+            animator.SetTrigger("isMoving");
+        }
+
+        if (collision.collider.tag == "R")
+        {
+            //rb.AddForce(direction);
+
+            animator.ResetTrigger("Hit");
+            animator.SetTrigger("isMoving");
+
+        }
+
+        if (collision.collider.tag == "U")
+        {
+            //rb.AddForce(direction);
+
+            animator.ResetTrigger("Hit");
+            animator.SetTrigger("isMoving");
+        }
+
+        if (collision.collider.tag == "D")
+        {
+            //rb.AddForce(direction);
+
+            
+            animator.ResetTrigger("Hit");
+            animator.SetTrigger("isMoving");
+        }
     }
 
 }

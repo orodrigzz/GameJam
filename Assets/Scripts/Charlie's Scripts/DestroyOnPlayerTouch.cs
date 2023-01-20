@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class DestroyOnPlayerTouch : MonoBehaviour
 {
+    public Animator animator;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Player")
         {
-            Destroy(this.gameObject);
+            animator.SetTrigger("Picked");
+            Destroy(this.gameObject, 0.43f);
         }
     }
 }
