@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public float smallArenaTime;
     public float spawnObstacleTime;
     public Transform walls;
+    public Transform floor;
     bool hasSpawned;
     public float resetObstacles;
     public GameObject obstacle;
@@ -99,12 +100,16 @@ public class GameManager : MonoBehaviour
         if (isSmallArenaActive)
         {
             Vector3 reducedScale = new Vector3(0.8f, 0.8f, 0.8f);
-            walls.localScale = reducedScale;
+            Vector3 reducedScaleWall = new Vector3(0.8f, 0.8f, 0.8f);
+            walls.localScale = reducedScaleWall;
+            floor.localScale = reducedScale;
             smallArenaTime -= Time.deltaTime;
             if (smallArenaTime <= 0f)
             {
                 Vector3 originalScale = new Vector3(1f, 1f, 1f);
-                walls.localScale = originalScale;
+                Vector3 originalScaleWall = new Vector3(2f, 2f, 2f);
+                walls.localScale = originalScaleWall;
+                floor.localScale = originalScale;
                 isSmallArenaActive = false;
                 smallArenaTime = 3.5f;
             }
