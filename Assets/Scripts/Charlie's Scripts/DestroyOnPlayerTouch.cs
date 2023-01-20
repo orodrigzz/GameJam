@@ -9,8 +9,16 @@ public class DestroyOnPlayerTouch : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            animator.SetTrigger("Picked");
-            Destroy(this.gameObject, 0.43f);
+            if (animator != null)
+            {
+                animator.SetTrigger("Picked");
+                Destroy(this.gameObject, 0.43f);
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
+
     }
 }
