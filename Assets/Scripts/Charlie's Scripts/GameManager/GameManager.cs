@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         highscore = PlayerPrefs.GetInt("highscore", 0);
         scoreText.text = score.ToString();
         highscoreText.text = highscore.ToString();
-        //InvokeRepeating("SpawnObstacle", 5, 5);
+        InvokeRepeating("SpawnObstacle", 5, 5);
     }
 
     void Update()
@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
         if (isSmallArenaActive)
         {
             Vector3 reducedScale = new Vector3(0.8f, 0.8f, 0.8f);
-            Vector3 reducedScaleWall = new Vector3(0.8f, 0.8f, 0.8f);
+            Vector3 reducedScaleWall = new Vector3(1.5f, 1.5f, 1.5f);
             walls.localScale = reducedScaleWall;
             floor.localScale = reducedScale;
             smallArenaTime -= Time.deltaTime;
