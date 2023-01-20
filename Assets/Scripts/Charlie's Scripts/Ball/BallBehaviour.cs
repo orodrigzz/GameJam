@@ -22,6 +22,9 @@ public class BallBehaviour : MonoBehaviour
     public GameObject HighScoreTable;
     public HighscoreTable highscoreTable;
 
+    public AudioSource dead;
+    public AudioSource contramuro;
+    public AudioSource contraplayer;
     void Start()
     {
         if (HighScoreTable != null)
@@ -61,6 +64,7 @@ public class BallBehaviour : MonoBehaviour
       {
             if (GameManager._GAME_MANAGER.isGodModeActive != true)
             {
+                dead.Play();
                 Destroy(Player);
                 highscoreTable.AddHighscoreEntry(GameManager._GAME_MANAGER.score, PlayerPrefs.GetString("name"));
                 HighScoreTable.SetActive(true);
@@ -71,8 +75,8 @@ public class BallBehaviour : MonoBehaviour
 
       if (collision.collider.tag == "L")
       {
+            contraplayer.Play();
             //rb.AddForce(direction);
-            
             GameManager._GAME_MANAGER.AddPoint();
             GameManager._GAME_MANAGER.num++;
             animator.SetTrigger("Hit");
@@ -83,7 +87,7 @@ public class BallBehaviour : MonoBehaviour
       if (collision.collider.tag == "R")
       {
             //rb.AddForce(direction);
-            
+            contraplayer.Play();
             GameManager._GAME_MANAGER.AddPoint();
             GameManager._GAME_MANAGER.num++;
             animator.SetTrigger("Hit");
@@ -94,7 +98,7 @@ public class BallBehaviour : MonoBehaviour
       if (collision.collider.tag == "U")
       {
             //rb.AddForce(direction);
-           
+            contraplayer.Play();
             GameManager._GAME_MANAGER.AddPoint();
             GameManager._GAME_MANAGER.num++;
             animator.SetTrigger("Hit");
@@ -105,7 +109,7 @@ public class BallBehaviour : MonoBehaviour
         if (collision.collider.tag == "D")
         {
             //rb.AddForce(direction);
-            
+            contraplayer.Play();
             GameManager._GAME_MANAGER.AddPoint();
             GameManager._GAME_MANAGER.num++;
             animator.SetTrigger("Hit");
@@ -115,9 +119,9 @@ public class BallBehaviour : MonoBehaviour
 
       if (collision.collider.tag == "Wall")
       {
-            
-            
-      }
+            contramuro.Play();
+
+        }
 
     }
     private void OnCollisionExit2D(Collision2D collision)

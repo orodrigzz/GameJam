@@ -13,12 +13,15 @@ public class PlayerBehaviour : MonoBehaviour
     float lastPlayerDirectionX;
     float lastPlayerDirectionY;
     #endregion
+
     #region ReflectThingys
     public GameObject rightThing;
     public GameObject leftThing;
     public GameObject upThing;
     public GameObject bottomThing;
     #endregion
+
+    public AudioSource points;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -115,6 +118,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (collision.collider.tag == "ExtraPoints")
         {
             GameManager._GAME_MANAGER.ExtraPoints();
+            points.Play();
         }
         if (collision.collider.tag == "GodMode")
         {
