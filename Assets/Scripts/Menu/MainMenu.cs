@@ -5,11 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void Tutorial()
-    {
-        SceneManager.LoadScene("Welcome");
-    }
-
     public void Level1()
     {
         SceneManager.LoadScene("Level1");
@@ -25,14 +20,13 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Settings");
     }
 
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
     public void Credits()
     {
         SceneManager.LoadScene("Credits");
     }
- 
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

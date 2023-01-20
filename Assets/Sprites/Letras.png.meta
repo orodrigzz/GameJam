@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: ab57b08d7c6267b49850cd710d1d26d2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Letras_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 596
+        width: 87
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4eddf0934ba7c4f97527f252800e88
+      internalID: -485963689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 595
+        width: 96
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb6bb3c74746c54d9a8de28e8957fdf
+      internalID: -604204529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 554
+        width: 155
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658dd25c45a9b2642ba9226c47378592
+      internalID: -36853500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_21
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 552
+        width: 160
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76529ab678ce67f4cb734866f6ed57b0
+      internalID: -605849441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_28
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 512
+        width: 155
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fedaab33bbd6a4d9272842a2180465
+      internalID: 1563074786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_35
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 509
+        width: 160
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed47f1d12097c1f469ab28e59b5fdaa9
+      internalID: 941693891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_36
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 470
+        width: 88
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9a81b2fc4b942409cfd320c4217868
+      internalID: -471322374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_43
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 468
+        width: 90
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282cbafc98ff20f45bfc65f37992686e
+      internalID: -593341619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_51
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 427
+        width: 94
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef44def0dbd3f734295801ee38b1eff0
+      internalID: 610998570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_52
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 428
+        width: 93
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5199396, y: 0.52463216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9381d04729510349b511a62d1c219c0
+      internalID: 1526588853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_72
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 301
+        width: 163
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb18892598dc4624ead041929c5e2729
+      internalID: -1599057686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_79
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 301
+        width: 159
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8a81452baf8af4cb4a0cd72e05dad6
+      internalID: 1776333429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_80
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 175
+        width: 88
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bcb4cee1bd95149bdd8bc417275625
+      internalID: 552608540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_84
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 176
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78ff7dd365a2ac4eaeac22b3a77b566
+      internalID: 887940224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_94
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 134
+        width: 156
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d99e143ac623cb4aa817efb771bd01c
+      internalID: 864796577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_97
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 93
+        width: 156
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc02ad41ff91b814a90ebc2737eecf49
+      internalID: -2115328825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_109
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 51
+        width: 89
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1ffb29ba42f60409d5f28dbf74c2d0
+      internalID: 1588405632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letras_113
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 51
+        width: 154
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d489ab54af09e94da11d1ff73d997b9
+      internalID: -1915831102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Letras_64: -109949034
+      Letras_43: -593341619
+      Letras_6: 1880767347
+      Letras_97: -2115328825
+      Letras_29: 1257218335
+      Letras_0: -97994000
+      Letras_109: 1588405632
+      Letras_38: 144684813
+      Letras_74: -636988453
+      Letras_24: 1820353704
+      Letras_32: 1763670224
+      Letras_96: 1807631195
+      Letras_113: -1915831102
+      Letras_21: -605849441
+      Letras_106: 1555140062
+      Letras_42: -1291740402
+      Letras_26: 540123284
+      Letras_65: 2007498037
+      Letras_68: 337709410
+      Letras_52: 1526588853
+      Letras_111: -1462626676
+      Letras_92: -208212211
+      Letras_48: -1974412394
+      Letras_17: -1000124095
+      Letras_8: -36853500
+      Letras_73: -1997875735
+      Letras_67: 1500798466
+      Letras_99: -849240634
+      Letras_104: 1835307690
+      Letras_93: 891984488
+      Letras_103: -347531997
+      Letras_7: -604204529
+      Letras_11: -27496521
+      Letras_79: 1776333429
+      Letras_31: 362322573
+      Letras_105: -1996078996
+      Letras_77: 997051302
+      Letras_117: -2099997288
+      Letras_55: -1437606657
+      Letras_112: 1557255643
+      Letras_70: -1893509935
+      Letras_110: 1524031263
+      Letras_30: -13262468
+      Letras_34: 728005870
+      Letras_23: 352325810
+      Letras_37: -895463998
+      Letras_102: -558649204
+      Letras_1: 1265264937
+      Letras_56: 1475011011
+      Letras_91: -2061743257
+      Letras_10: -292100687
+      Letras_60: 970852571
+      Letras_16: -526285750
+      Letras_27: -1930901915
+      Letras_2: -1600874768
+      Letras_51: 610998570
+      Letras_19: -808232868
+      Letras_36: -471322374
+      Letras_85: -486141983
+      Letras_45: 527403570
+      Letras_116: 61848711
+      Letras_86: -1255272949
+      Letras_9: -1221968270
+      Letras_88: 868009442
+      Letras_35: 941693891
+      Letras_58: -435512998
+      Letras_89: 401791206
+      Letras_12: 1821860132
+      Letras_94: 864796577
+      Letras_15: -1325964941
+      Letras_101: 232962429
+      Letras_14: 34517400
+      Letras_90: -1820198567
+      Letras_59: 1607191184
+      Letras_118: 1625890998
+      Letras_63: 62115505
+      Letras_83: 1084590920
+      Letras_25: 407818418
+      Letras_28: 1563074786
+      Letras_98: -83171412
+      Letras_44: 2145097584
+      Letras_13: 579611360
+      Letras_5: -1901691536
+      Letras_87: -83568642
+      Letras_54: 230500353
+      Letras_75: -325989475
+      Letras_119: 3504592
+      Letras_76: 938982825
+      Letras_84: 887940224
+      Letras_114: 304261819
+      Letras_80: 552608540
+      Letras_81: 1063905807
+      Letras_47: 827873516
+      Letras_78: -410980798
+      Letras_33: -252432746
+      Letras_3: -485963689
+      Letras_115: -1490067735
+      Letras_49: -426180432
+      Letras_61: 1249047165
+      Letras_20: 790526778
+      Letras_69: -1172951751
+      Letras_108: 954667716
+      Letras_46: 1986680015
+      Letras_22: -793188268
+      Letras_95: -31074784
+      Letras_41: 1703720570
+      Letras_53: 658040697
+      Letras_40: -1942083991
+      Letras_72: -1599057686
+      Letras_39: -1369705212
+      Letras_66: 1628826933
+      Letras_62: -1943456218
+      Letras_71: 1496632018
+      Letras_50: 535479274
+      Letras_100: 1373540391
+      Letras_57: -1016676516
+      Letras_82: -280977492
+      Letras_4: -2096851596
+      Letras_18: -39023315
+      Letras_107: -1067465459
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
