@@ -40,6 +40,14 @@ public class GameManager : MonoBehaviour
     bool hasSpawned;
     public float resetObstacles;
     public GameObject obstacle;
+
+    public float obstacleMinX;
+    public float obstacleMaxX;
+    public float obstacleMinY;
+    public float obstaclemMaxY;
+    float xObstacle;
+    float yObstacle;
+    Vector2 randomPosObstacle;
     #endregion
 
     private void Awake()
@@ -61,7 +69,7 @@ public class GameManager : MonoBehaviour
         highscore = PlayerPrefs.GetInt("highscore", 0);
         scoreText.text = score.ToString();
         highscoreText.text = highscore.ToString();
-        InvokeRepeating("SpawnObstacle", 3, 3);
+        InvokeRepeating("SpawnObstacle", 5, 5);
     }
 
     void Update()
@@ -69,6 +77,11 @@ public class GameManager : MonoBehaviour
         x = Random.Range(minX, maxX);
         y = Random.Range(minY, maxY);
         randomPos = new Vector2(x, y);
+
+        xObstacle = Random.Range(obstacleMinX, obstacleMaxX);
+        yObstacle = Random.Range(obstacleMinY, obstaclemMaxY);
+        randomPosObstacle = new Vector2(xObstacle, yObstacle);
+
         scoreText.text = score.ToString();
         if (num == 5)
         {
@@ -80,7 +93,7 @@ public class GameManager : MonoBehaviour
             if (godModeTime <= 0f)
             {
                 isGodModeActive = false;
-                godModeTime = 1f;
+                godModeTime = 3.5f;
             }
         }
         if (isSmallArenaActive)
@@ -93,7 +106,7 @@ public class GameManager : MonoBehaviour
                 Vector3 originalScale = new Vector3(1f, 1f, 1f);
                 walls.localScale = originalScale;
                 isSmallArenaActive = false;
-                smallArenaTime = 1f;
+                smallArenaTime = 3.5f;
             }
         }
         
@@ -103,11 +116,11 @@ public class GameManager : MonoBehaviour
     public void SpawnBall()
     {
         Instantiate(ball, randomPos, Quaternion.identity);
-        spawnObstacleTime = 3;
+        num = 0;
     }
     public void SpawnObstacle()
     {
-        Instantiate(obstacle, randomPos, Quaternion.identity);
+        Instantiate(obstacle, randomPosObstacle, Quaternion.identity);
         hasSpawned = true;
 
     }

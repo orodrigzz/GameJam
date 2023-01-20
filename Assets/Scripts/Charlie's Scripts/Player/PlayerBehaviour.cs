@@ -8,6 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 playerDirection;
     public float playerSpeed;
+    SpriteRenderer sprite;
     #endregion
     #region ReflectThingys
     public GameObject rightThing;
@@ -18,6 +19,7 @@ public class PlayerBehaviour : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
         #region DeactivateThingys
         rightThing.SetActive(false);
         leftThing.SetActive(false);
@@ -66,6 +68,14 @@ public class PlayerBehaviour : MonoBehaviour
         else
         {
             leftThing.SetActive(false);
+        }
+        if (GameManager._GAME_MANAGER.isGodModeActive)
+        {
+            sprite.color = new Color(255,255,0);
+        }
+        if (GameManager._GAME_MANAGER.isGodModeActive == false)
+        {
+            sprite.color = new Color(0, 255, 0);
         }
     }
 
