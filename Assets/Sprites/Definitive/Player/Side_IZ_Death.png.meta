@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,243 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Side_IZ_Death_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 324
+        width: 36
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22e60597720d9347a7263a068302005
+      internalID: 1629285508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 324
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a5f467c36f7d74cb440aaae2af1378
+      internalID: -588197156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_2
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 324
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38f01eed857e5c4cbd535536973f727
+      internalID: 1074304235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_3
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 324
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f195b599bc33fc4086835aa02bb746b
+      internalID: -1495786718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_4
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 324
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7e6ba11733b694282be329a0ddf937
+      internalID: 1045287209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 68
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79308d2530ab9e34891092ac31ec034d
+      internalID: 631313731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 68
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63161ed4473009e4bb0a584adf2d9fa4
+      internalID: 984699096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 68
+        width: 79
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206a8a01b79d6224e8f7df37f9d1776d
+      internalID: 1507840152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_23
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 60
+        width: 80
+        height: 86
+      alignment: 9
+      pivot: {x: 0.5559044, y: 0.42849395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d7ff6ec79272442ac6781b202ce812
+      internalID: -980296064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_IZ_Death_7
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 72
+        width: 65
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5516038, y: 0.49999982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25774e1bb49f8054da9405eb84978f0a
+      internalID: 1638040712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +323,44 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Side_IZ_Death_36: -785098530
+      Side_IZ_Death_29: 1946327407
+      Side_IZ_Death_10: -1990726429
+      Side_IZ_Death_24: 1486192463
+      Side_IZ_Death_28: 1958521589
+      Side_IZ_Death_30: 1299350465
+      Side_IZ_Death_1: -588197156
+      Side_IZ_Death_14: -1258741870
+      Side_IZ_Death_0: 1629285508
+      Side_IZ_Death_25: -273112000
+      Side_IZ_Death_17: -376238324
+      Side_IZ_Death_19: 1523641049
+      Side_IZ_Death_20: 1675751577
+      Side_IZ_Death_34: 667619939
+      Side_IZ_Death_9: 1507840152
+      Side_IZ_Death_35: 2100758559
+      Side_IZ_Death_23: -980296064
+      Side_IZ_Death_7: 1638040712
+      Side_IZ_Death_2: 1074304235
+      Side_IZ_Death_26: -816249480
+      Side_IZ_Death_22: 295636638
+      Side_IZ_Death_32: 304845132
+      Side_IZ_Death_33: -767594293
+      Side_IZ_Death_3: -1495786718
+      Side_IZ_Death_4: 1045287209
+      Side_IZ_Death_12: 231383837
+      Side_IZ_Death_21: 389273534
+      Side_IZ_Death_13: -1723472808
+      Side_IZ_Death_6: 984699096
+      Side_IZ_Death_5: 631313731
+      Side_IZ_Death_15: 1508860982
+      Side_IZ_Death_8: 2006515052
+      Side_IZ_Death_27: 2097205608
+      Side_IZ_Death_31: 1918276821
+      Side_IZ_Death_11: -315958646
+      Side_IZ_Death_16: -1939401167
+      Side_IZ_Death_18: -1363564116
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

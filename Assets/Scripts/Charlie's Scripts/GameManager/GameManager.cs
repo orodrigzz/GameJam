@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
         highscore = PlayerPrefs.GetInt("highscore", 0);
         scoreText.text = score.ToString();
         highscoreText.text = highscore.ToString();
-        InvokeRepeating("SpawnObstacle", 5, 5);
+        //InvokeRepeating("SpawnObstacle", 5, 5);
     }
 
     void Update()

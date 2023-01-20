@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,222 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Back_Death_0
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 324
+        width: 52
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a86c9533602a21408408f026da16275
+      internalID: 1476433347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_Death_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 324
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d533a8a3373c48d4da4082bec964690a
+      internalID: -1339555649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_Death_2
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 324
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be8cab248d2dd7418bd8e3aa3752347
+      internalID: 285327726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_Death_3
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 324
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48223704c0dc05047b7b76aa8c2d53a5
+      internalID: 2136392555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_Death_4
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 324
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad76ac481a949941babbf6d00dc0736
+      internalID: -1091271752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_Death_5
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 68
+        width: 73
+        height: 112
+      alignment: 9
+      pivot: {x: 0.53484106, y: 0.5000001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbacf9b67824344c9f7728658639b7c
+      internalID: -1344989444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_Death_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 68
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd500564207d8f448ab34a517ee3d808
+      internalID: 545654870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_Death_13
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 72
+        width: 80
+        height: 116
+      alignment: 9
+      pivot: {x: 0.49545747, y: 0.4655452}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04b27b517c51304ba4bddcfd0b5830c
+      internalID: 1619334202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Back_Death_6
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 61
+        width: 77
+        height: 98
+      alignment: 9
+      pivot: {x: 0.50943744, y: 0.34428135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cfc6e823eab904888253cf7258b6f8
+      internalID: 1252330703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +302,40 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Back_Death_32: 1671448644
+      Back_Death_17: 250764623
+      Back_Death_18: -1855493203
+      Back_Death_11: 13296478
+      Back_Death_2: 285327726
+      Back_Death_26: -277511165
+      Back_Death_10: -1676480253
+      Back_Death_25: 1347476014
+      Back_Death_0: 1476433347
+      Back_Death_23: 1756884216
+      Back_Death_31: -660174453
+      Back_Death_8: -1349580683
+      Back_Death_4: -1091271752
+      Back_Death_30: -2133023616
+      Back_Death_6: 1252330703
+      Back_Death_14: -266529783
+      Back_Death_7: 1602293690
+      Back_Death_5: -1344989444
+      Back_Death_20: 551036409
+      Back_Death_27: 715101545
+      Back_Death_29: -1292645202
+      Back_Death_24: 2116624979
+      Back_Death_28: 1594341254
+      Back_Death_16: -612188565
+      Back_Death_22: -2134136221
+      Back_Death_9: 545654870
+      Back_Death_15: 1202031930
+      Back_Death_3: 2136392555
+      Back_Death_12: 468252221
+      Back_Death_19: 2081377353
+      Back_Death_1: -1339555649
+      Back_Death_21: 1840844301
+      Back_Death_13: 1619334202
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

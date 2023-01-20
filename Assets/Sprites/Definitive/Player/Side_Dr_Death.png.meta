@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,243 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Side_Dr_Death_0
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 324
+        width: 36
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d65d8184fdd1b3458ca53c3a4734048
+      internalID: 1067337178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_1
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 324
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d810a43a8791da841b1580957b7cc1e8
+      internalID: 1233096203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_2
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 324
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbea258b06db8c749a8388daba8690ff
+      internalID: 1011427127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_3
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 324
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce3d714898ac6640a89a34e1c92a209
+      internalID: -691748582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_4
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 324
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46d88f25b387b5459b517783b6c20e3
+      internalID: 964755187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 68
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90b8b4557161dc42a128077167b20c9
+      internalID: -409585308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_6
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 68
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea750c3effdac04f8690ff9cebe1158
+      internalID: -1728852902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_10
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 67
+        width: 76
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a1c4efa9f22524b8bd271b4fd90ce8
+      internalID: -1689757344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_22
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 59
+        width: 76
+        height: 86
+      alignment: 9
+      pivot: {x: 0.47057542, y: 0.49349967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e766f9b0697e05542a8e7f01f83723be
+      internalID: 1112238053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Dr_Death_7
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 62
+        width: 67
+        height: 61
+      alignment: 9
+      pivot: {x: 0.45827928, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84466fef04a65664fbf9a56a6cbddbd0
+      internalID: 714024013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +323,44 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Side_Dr_Death_14: 698328339
+      Side_Dr_Death_13: -1931663922
+      Side_Dr_Death_9: 374608883
+      Side_Dr_Death_20: -862071515
+      Side_Dr_Death_11: -1202982861
+      Side_Dr_Death_2: 1011427127
+      Side_Dr_Death_23: -1649002606
+      Side_Dr_Death_34: -1227463252
+      Side_Dr_Death_21: 1887434150
+      Side_Dr_Death_0: 1067337178
+      Side_Dr_Death_12: 962349962
+      Side_Dr_Death_1: 1233096203
+      Side_Dr_Death_7: 714024013
+      Side_Dr_Death_3: -691748582
+      Side_Dr_Death_19: -1437328101
+      Side_Dr_Death_6: -1728852902
+      Side_Dr_Death_8: -254872192
+      Side_Dr_Death_5: -409585308
+      Side_Dr_Death_4: 964755187
+      Side_Dr_Death_15: -2024190698
+      Side_Dr_Death_17: -822592628
+      Side_Dr_Death_10: -1689757344
+      Side_Dr_Death_35: 1220099943
+      Side_Dr_Death_29: -1633010045
+      Side_Dr_Death_36: -108867692
+      Side_Dr_Death_26: 901825331
+      Side_Dr_Death_22: 1112238053
+      Side_Dr_Death_30: 2099963000
+      Side_Dr_Death_31: 410856232
+      Side_Dr_Death_32: -1377879179
+      Side_Dr_Death_25: -1983437079
+      Side_Dr_Death_24: 1388277851
+      Side_Dr_Death_33: 1681398726
+      Side_Dr_Death_18: -1197062656
+      Side_Dr_Death_28: 1910737007
+      Side_Dr_Death_16: -185846999
+      Side_Dr_Death_27: -672940450
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
