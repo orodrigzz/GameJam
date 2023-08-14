@@ -20,7 +20,7 @@ public class UI_InputWindow : MonoBehaviour {
 
         okBtn = transform.Find("okBtn").GetComponent<Button_UI>();
         cancelBtn = transform.Find("cancelBtn").GetComponent<Button_UI>();
-        //titleText = transform.Find("titleText").GetComponent<Text>();
+        titleText = transform.Find("titleText").GetComponent<Text>();
         inputField = transform.Find("inputField").GetComponent<TMP_InputField>();
 
         Hide();
