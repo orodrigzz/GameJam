@@ -1,14 +1,16 @@
-ï»¿using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HighscoreTable : MonoBehaviour {
-
+public class HighScoreLogic : MonoBehaviour
+{
     private Transform entryContainer;
     private Transform entryTemplate;
     private List<Transform> highscoreEntryTransformList;
 
-    private void Awake() {
+    private void Awake()
+    {
         entryContainer = transform.Find("highscoreEntryContainer");
         entryTemplate = entryContainer.Find("highscoreEntryTemplate");
 
@@ -17,7 +19,8 @@ public class HighscoreTable : MonoBehaviour {
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
-        if (highscores == null) {
+        if (highscores == null)
+        {
             AddHighscoreEntry(0, "Richard");
             jsonString = PlayerPrefs.GetString("highscoreTable");
             highscores = JsonUtility.FromJson<Highscores>(jsonString);
@@ -26,13 +29,17 @@ public class HighscoreTable : MonoBehaviour {
         RefreshHighscoreTable();
     }
 
-    private void RefreshHighscoreTable() {
+    private void RefreshHighscoreTable()
+    {
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
-        for (int i = 0; i < highscores.highscoreEntryList.Count; i++) {
-            for (int j = i + 1; j < highscores.highscoreEntryList.Count; j++) {
-                if (highscores.highscoreEntryList[j].score > highscores.highscoreEntryList[i].score) {
+        for (int i = 0; i < highscores.highscoreEntryList.Count; i++)
+        {
+            for (int j = i + 1; j < highscores.highscoreEntryList.Count; j++)
+            {
+                if (highscores.highscoreEntryList[j].score > highscores.highscoreEntryList[i].score)
+                {
                     HighscoreEntry tmp = highscores.highscoreEntryList[i];
                     highscores.highscoreEntryList[i] = highscores.highscoreEntryList[j];
                     highscores.highscoreEntryList[j] = tmp;
@@ -40,19 +47,23 @@ public class HighscoreTable : MonoBehaviour {
             }
         }
 
-        if (highscoreEntryTransformList != null) {
-            foreach (Transform highscoreEntryTransform in highscoreEntryTransformList) {
+        if (highscoreEntryTransformList != null)
+        {
+            foreach (Transform highscoreEntryTransform in highscoreEntryTransformList)
+            {
                 Destroy(highscoreEntryTransform.gameObject);
             }
         }
 
         highscoreEntryTransformList = new List<Transform>();
-        foreach (HighscoreEntry highscoreEntry in highscores.highscoreEntryList) {
+        foreach (HighscoreEntry highscoreEntry in highscores.highscoreEntryList)
+        {
             CreateHighscoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList);
         }
     }
 
-    private void CreateHighscoreEntryTransform(HighscoreEntry highscoreEntry, Transform container, List<Transform> transformList) {
+    private void CreateHighscoreEntryTransform(HighscoreEntry highscoreEntry, Transform container, List<Transform> transformList)
+    {
         float templateHeight = 31f;
         Transform entryTransform = Instantiate(entryTemplate, container);
         RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
@@ -61,13 +72,14 @@ public class HighscoreTable : MonoBehaviour {
 
         int rank = transformList.Count + 1;
         string rankString;
-        switch (rank) {
-        default:
-            rankString = rank + "Âº"; break;
+        switch (rank)
+        {
+            default:
+                rankString = rank + "º"; break;
 
-        case 1: rankString = "1Âº"; break;
-        case 2: rankString = "2Âº"; break;
-        case 3: rankString = "3Âº"; break;
+            case 1: rankString = "1º"; break;
+            case 2: rankString = "2º"; break;
+            case 3: rankString = "3º"; break;
         }
 
         entryTransform.Find("posText").GetComponent<Text>().text = rankString;
@@ -80,8 +92,9 @@ public class HighscoreTable : MonoBehaviour {
         entryTransform.Find("nameText").GetComponent<Text>().text = name;
 
         entryTransform.Find("background").gameObject.SetActive(rank % 2 == 1);
-        
-        if (rank == 1) {
+
+        if (rank == 1)
+        {
             entryTransform.Find("posText").GetComponent<Text>().color = Color.green;
             entryTransform.Find("scoreText").GetComponent<Text>().color = Color.green;
             entryTransform.Find("nameText").GetComponent<Text>().color = Color.green;
@@ -90,14 +103,17 @@ public class HighscoreTable : MonoBehaviour {
         transformList.Add(entryTransform);
     }
 
-    public void AddHighscoreEntry(int score, string name) {
+    public void AddHighscoreEntry(int score, string name)
+    {
         HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
-        
+
         string jsonString = PlayerPrefs.GetString("highscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
-        if (highscores == null) {
-            highscores = new Highscores() {
+        if (highscores == null)
+        {
+            highscores = new Highscores()
+            {
                 highscoreEntryList = new List<HighscoreEntry>()
             };
         }
@@ -111,14 +127,15 @@ public class HighscoreTable : MonoBehaviour {
         RefreshHighscoreTable();
     }
 
-    private class Highscores {
+    private class Highscores
+    {
         public List<HighscoreEntry> highscoreEntryList;
     }
 
-    [System.Serializable] 
-    private class HighscoreEntry {
+    [System.Serializable]
+    private class HighscoreEntry
+    {
         public int score;
         public string name;
     }
-
 }

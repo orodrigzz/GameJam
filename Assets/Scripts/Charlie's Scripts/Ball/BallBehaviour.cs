@@ -20,7 +20,7 @@ public class BallBehaviour : MonoBehaviour
 
     //HighscoreTable
     public GameObject HighScoreTable;
-    public HighscoreTable highscoreTable;
+    public HighScoreLogic highscoreTable;
 
     public AudioSource dead;
     public AudioSource contramuro;

@@ -6,7 +6,7 @@ using CodeMonkey;
 
 public class UI_Testing : MonoBehaviour {
 
-    [SerializeField] private HighscoreTable highscoreTable;
+    [SerializeField] private HighScoreLogic highscoreTable;
 
     //InputName
     public GameObject InputName;
