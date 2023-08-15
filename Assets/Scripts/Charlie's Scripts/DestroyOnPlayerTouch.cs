@@ -12,12 +12,15 @@ public class DestroyOnPlayerTouch : MonoBehaviour
             if (animator != null)
             {
                 animator.SetTrigger("Picked");
+                GameManager._GAME_MANAGER.extraPointsGiven = false;
                 Destroy(this.gameObject, 0.43f);
             }
-            else
+            if(animator == null)
             {
+                GameManager._GAME_MANAGER.extraPointsGiven = false;
                 Destroy(this.gameObject);
             }
+            
         }
 
     }

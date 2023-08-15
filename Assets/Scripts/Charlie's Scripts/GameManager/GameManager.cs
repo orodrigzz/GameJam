@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     #region Score&HighScore
     public Text scoreText;
     public Text highscoreText;
-
+    public bool extraPointsGiven;
     public int score = 0;
     int highscore = 0;
     #endregion
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         highscore = PlayerPrefs.GetInt("highscore", 0);
-        scoreText.text = score.ToString();
+        //scoreText.text = score.ToString();
         highscoreText.text = highscore.ToString();
         InvokeRepeating("SpawnObstacle", 5, 5);
     }
@@ -142,7 +142,12 @@ public class GameManager : MonoBehaviour
 
     public void ExtraPoints()
     {
-        score += 100;
+        if (!extraPointsGiven)
+        {
+            score += 100;
+            extraPointsGiven = true;
+        }
+        
     }
     public void GodMode()
     {

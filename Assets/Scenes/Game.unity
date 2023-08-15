@@ -12885,15 +12885,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 118882400409267403, guid: 85252555cbf9b524894b1750d6f99a7b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 118882400409267403, guid: 85252555cbf9b524894b1750d6f99a7b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 118882400409267403, guid: 85252555cbf9b524894b1750d6f99a7b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 118882400409267403, guid: 85252555cbf9b524894b1750d6f99a7b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12953,7 +12953,7 @@ PrefabInstance:
       objectReference: {fileID: 1911044528}
     - target: {fileID: 4611009919644409159, guid: 85252555cbf9b524894b1750d6f99a7b, type: 3}
       propertyPath: godModeTime
-      value: 3.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4611009919644409159, guid: 85252555cbf9b524894b1750d6f99a7b, type: 3}
       propertyPath: obstacleMaxX
